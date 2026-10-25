@@ -1,0 +1,12 @@
+{
+  "ingested": 1200,
+  "passed": 861,
+  "pass_rate_pct": 71.75,
+  "missing_user_id": 80,
+  "invalid_email": 120,
+  "missing_engagement_score": 60,
+  "out_of_range_score": 112,
+  "invalid_last_login": 100,
+  "missing_region": 265,
+  "duplicate_rows": 16
+}
