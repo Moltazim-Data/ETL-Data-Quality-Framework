@@ -1,5 +1,8 @@
 # ETL Data Quality Framework
 
+
+> **Demo data notice:** The raw and cleaned CSVs and chart assets added for this repository are synthetic examples. Re-run the pipeline on the included raw data before treating metrics as validated; historical report figures may not match this generated sample exactly.
+
 A Python ETL pipeline with data-quality checks for missing user IDs, malformed email addresses, and engagement scores outside the expected 0–100 range.
 
 ## Project contents
