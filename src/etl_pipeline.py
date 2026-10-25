@@ -5,7 +5,7 @@ import pandas as pd
 ROOT=Path(__file__).resolve().parents[1]
 LOG_DIR=ROOT/"logs"; LOG_DIR.mkdir(exist_ok=True)
 logging.basicConfig(filename=LOG_DIR/"pipeline_audit.log",level=logging.INFO,format="%(asctime)s - %(levelname)s - %(message)s")
-EMAIL_RE=re.compile(r"^[A-Za-z0-9_.+-]+@[A-Za-z0-9-]+\\.[A-Za-z0-9-.]+$")
+EMAIL_RE=re.compile(r"^[A-Za-z0-9_.+-]+@[A-Za-z0-9-]+[.][A-Za-z0-9-.]+$")
 def run_pipeline():
     df=pd.read_csv(ROOT/"data/dirty_raw_events.csv"); initial=len(df)
     required={"event_id","user_id","email","engagement_score","last_login","region"}
